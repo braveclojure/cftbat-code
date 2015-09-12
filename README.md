@@ -1,4 +1,9 @@
 # Clojure for the Brave and True Code
 
-This will contain all the code examples from the book Clojure for the 
-Brave and True, which you can read at http://braveclojure.com.
+This contains all the code examples from the book Clojure for the
+Brave and True, which you can read at http://braveclojure.com. It's
+organized by chapter, with the `01` directory corresponding to chapter
+1, `02` chapter 2 - you get the idea. Each directory has its own
+README with additional notes.
+
+Have fun!
