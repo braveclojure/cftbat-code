@@ -100,7 +100,7 @@
 ; => nil
 
 
-;; Naming Values with dev
+;; Naming Values with def
 (def failed-protagonist-names
   ["Larry Potter" "Doreen the Explorer" "The Incredible Bulk"])
 
