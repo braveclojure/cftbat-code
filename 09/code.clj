@@ -27,7 +27,7 @@
 (realized? (future (Thread/sleep 1000)))
 ; => false
 
-(let [f (future)]
+(let [f (future (Thread/sleep 1000))]
   @f
   (realized? f))
 ; => true
