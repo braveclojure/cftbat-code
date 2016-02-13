@@ -48,7 +48,7 @@
 ; => ({:human 8.1, :critter 0.0}
 {:human 7.3, :critter 0.2}
 {:human 6.6, :critter 0.3}
-{:human 5.0, :critter 1.8})
+{:human 5.0, :critter 1.8}
 
 
 (def sum #(reduce + %))
@@ -111,33 +111,33 @@
 ; => ({:month 1 :day 1 :human 5.3 :critter 2.3}
 {:month 1 :day 2 :human 5.1 :critter 2.0}
 {:month 2 :day 1 :human 4.9 :critter 2.1}
-{:month 2 :day 2 :human 5.0 :critter 2.5})
+{:month 2 :day 2 :human 5.0 :critter 2.5}
 
 (drop-while #(< (:month %) 3) food-journal)
 ; => ({:month 3 :day 1 :human 4.2 :critter 3.3}
 {:month 3 :day 2 :human 4.0 :critter 3.8}
 {:month 4 :day 1 :human 3.7 :critter 3.9}
-{:month 4 :day 2 :human 3.7 :critter 3.6})
+{:month 4 :day 2 :human 3.7 :critter 3.6}
 
 (take-while #(< (:month %) 4)
             (drop-while #(< (:month %) 2) food-journal))
 ; => ({:month 2 :day 1 :human 4.9 :critter 2.1}
 {:month 2 :day 2 :human 5.0 :critter 2.5}
 {:month 3 :day 1 :human 4.2 :critter 3.3}
-{:month 3 :day 2 :human 4.0 :critter 3.8})
+{:month 3 :day 2 :human 4.0 :critter 3.8}
 
 (filter #(< (:human %) 5) food-journal)
 ; => ({:month 2 :day 1 :human 4.9 :critter 2.1}
 {:month 3 :day 1 :human 4.2 :critter 3.3}
 {:month 3 :day 2 :human 4.0 :critter 3.8}
 {:month 4 :day 1 :human 3.7 :critter 3.9}
-{:month 4 :day 2 :human 3.7 :critter 3.6})
+{:month 4 :day 2 :human 3.7 :critter 3.6}
 
 (filter #(< (:month %) 3) food-journal)
 ; => ({:month 1 :day 1 :human 5.3 :critter 2.3}
 {:month 1 :day 2 :human 5.1 :critter 2.0}
 {:month 2 :day 1 :human 4.9 :critter 2.1}
-{:month 2 :day 2 :human 5.0 :critter 2.5})
+{:month 2 :day 2 :human 5.0 :critter 2.5}
 
 (some #(> (:critter %) 5) food-journal)
 ; => nil
@@ -171,7 +171,7 @@
 (defn vampire?
   [record]
   (and (:makes-blood-puns? record)
-       (not (:has-pulse? Record))
+       (not (:has-pulse? record))
        record))
 
 (defn identify-vampire
@@ -291,9 +291,9 @@
 ; => [0 1 2 3]
 
 (def add10 (partial + 10))
-(add10 3) 
+(add10 3)
 ; => 13
-(add10 5) 
+(add10 5)
 ; => 15
 
 (def add-missing-elements
@@ -309,7 +309,7 @@
     (apply partialized-fn (into args more-args))))
 
 (def add20 (my-partial + 20))
-(add20 3) 
+(add20 3)
 ; => 23
 
 (fn [& more-args]
@@ -343,10 +343,10 @@
     (not (apply fun args))))
 
 (def my-pos? (complement neg?))
-(my-pos? 1)  
+(my-pos? 1)
 ; => true
 
-(my-pos? -1) 
+(my-pos? -1)
 ; => false
 
 
