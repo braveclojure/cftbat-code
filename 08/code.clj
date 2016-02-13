@@ -383,7 +383,7 @@ sweating-to-the-oldies
           validations))
 
 (validate order-details order-details-validations)
-; => {:email ("Your email address doesn't look like an email address")}
+; => {:email ["Your email address doesn't look like an email address"]}
 
 
 (let [errors (validate order-details order-details-validations)]
