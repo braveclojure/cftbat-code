@@ -228,7 +228,7 @@ sweating-to-the-oldies
               [["Sweet lion of Zion, this is bad code:" bad]
                ["Great cow of Moscow, this is good code:" good]])))
 
-(code-critic (1 + 1) (+ 1 1))
+(code-critic {:good (+ 1 1) :bad (1 + 1)})
 ; => Sweet lion of Zion, this is bad code: (1 + 1)
 ; => Great cow of Moscow, this is good code: (+ 1 1)
 
