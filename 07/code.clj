@@ -100,7 +100,7 @@ if
 (map inc [1 2 3])
 ; => (2 3 4)
 
-(read-string ("+"))
+(read-string "+")
 ; => +
 
 (type (read-string "+"))
