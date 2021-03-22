@@ -223,7 +223,7 @@ sweating-to-the-oldies
 
 
 (defmacro code-critic
-  [{:keys [good bad]}]
+  [bad good]
   `(do ~@(map #(apply criticize-code %)
               [["Sweet lion of Zion, this is bad code:" bad]
                ["Great cow of Moscow, this is good code:" good]])))
