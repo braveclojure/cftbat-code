@@ -34,7 +34,7 @@
 
 (defn upload
   [headshot c]
-  (go (Thread/sleep (rand 100))
+  (go (Thread/sleep (long (rand 100)))
       (>! c headshot)))
 
 
